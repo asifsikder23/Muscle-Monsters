@@ -10,8 +10,8 @@ const Exercise = (props) => {
                             <div className="card-body">
                             <h5 className="card-title">{name}</h5>
                             <p className="card-text">{description}
-                                <p>Age: {age} </p>
-                                <p>Time: {time} </p>
+                                <p className='fw-bold pt-3'>Age: {age} </p>
+                                <p className='fw-bold'>Time: {time} </p>
                             </p>
                             <div className="d-flex justify-content-center">
                                 <button type="button" className="btn btn-primary px-5">Add to List</button>

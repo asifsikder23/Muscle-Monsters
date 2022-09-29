@@ -15,7 +15,7 @@ const Workout = () => {
         <div>
             <div className="container">
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-12 col-md-8">
                         <div className="row row-cols-1 row-cols-md-3 g-3 ">
                             {Workout.map(exercise=> <Exercise
                             key={exercise.key}
@@ -23,7 +23,7 @@ const Workout = () => {
                             ></Exercise>)}
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4 mt-4 mt-md-0">
                         <Timer></Timer>
                     </div>
                     

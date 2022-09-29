@@ -2,9 +2,35 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="mx-auto bg-dark text-white pt-2 pb-1">
-            <h1> WELCOME TO MUSCLE MONSTERS</h1>
-            <hr className='mx-5'/>
+        <div>
+    <header className="sticky-top bg-dark">
+        <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+                <img src="fgh.png" alt="" />
+              <a className="navbar-brand text-white" href="index.html">Muscle Monsters</a>
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item">
+                    <a className="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-white" href="index.html">About Us</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-white" href="index.html">Contact</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-white" href="index.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
         </div>
     );
 };
