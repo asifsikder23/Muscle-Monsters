@@ -1,7 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../Timer/Timer.css'
+import Swal from 'sweetalert2'
 
-const Timer = () => {
+const Timer = ({time}) => {
+    const handleAlert= ()=>{
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+          )
+    }
+    const [timer, setTimer] = useState(0);
+    const break10s = (time) => setTimer(time)
+    const break20s = (time) => setTimer(time)
+    const break30s = (time) => setTimer(time)
+    const break40s = (time) => setTimer(time)
+    const break50s = (time) => setTimer(time)
+
     return (
             <div className="card pt-3 card-img">
         <div className="d-flex gap-2 ms-4 align-items-center">
@@ -40,25 +55,25 @@ const Timer = () => {
         <div className="card-body">
           <h5>Add a Break</h5>
           <div className="d-flex justify-content-center gap-3 py-2 align-items-center text">
-            <button className="button break-time ">10s</button>
-            <button className="button break-time ">20s</button>
-            <button className="button break-time ">30s</button>
-            <button className="button break-time ">40s</button>
-            <button className="button break-time ">50s</button>
+            <button onClick={()=>break10s(10)} className="button break-time ">10s</button>
+            <button onClick={()=>break20s(20)} className="button break-time ">20s</button>
+            <button onClick={()=>break30s(30)} className="button break-time ">30s</button>
+            <button onClick={()=>break40s(40)} className="button break-time ">40s</button>
+            <button onClick={()=>break50s(50)} className="button break-time ">50s</button>
             
           </div>
 
           <h4>Exercise Details</h4>
           <div>
-            <div className="d-flex gap-2 pt-3">
-                <h5>Exercise Time </h5> <input className="text-center h-50 w-50 border-0" type="text"placeholder="200sec"/>
+            <div className="d-flex gap-5 pt-3">
+                <h5>Exercise Time </h5> <span> {time} Sec </span>
             </div>
-            <div className="d-flex gap-4 pt-3">
-                <h5>Break Time </h5> <input className="text-center h-50 w-50 border-0" type="text"placeholder="15sec"/>
+            <div className="d-flex gap-5 pt-3">
+                <h5>Break Time </h5> <span> {timer} </span>
             </div>
             
           <div className="d-flex justify-content-center py-2">
-            <a href="index.html" className="btn btn-primary w-100">Activity Completed</a>
+            <a onClick={handleAlert} href="#" className="btn btn-primary w-100">Activity Completed</a>
           </div>
         </div>
       </div>

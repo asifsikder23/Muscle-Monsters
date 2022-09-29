@@ -2,6 +2,7 @@ import React from 'react';
 
 const Exercise = (props) => {
     const{img, name, description, age, time} = props.exercise;
+    const {addToList} =props;
     return (
         <>
             <div className="col">
@@ -14,11 +15,11 @@ const Exercise = (props) => {
                                 <p className='fw-bold'>Time: {time} </p>
                             </p>
                             <div className="d-flex justify-content-center">
-                                <button type="button" className="btn btn-primary px-5">Add to List</button>
+                                <button onClick={()=>addToList(props.exercise)} type="button" className="btn btn-primary px-5">Add to List</button>
                             </div>
                             </div>
                         </div>
-                        </div>
+            </div>
         </>
     );
 };
