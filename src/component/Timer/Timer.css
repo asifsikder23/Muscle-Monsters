@@ -1,0 +1,16 @@
+.card-img{
+    width: 18rem;
+}
+.button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: rgb(101, 101, 252);
+    color: aliceblue;
+    transition: 0.3s;
+    
+}
