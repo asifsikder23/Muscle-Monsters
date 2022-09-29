@@ -18,11 +18,11 @@ const Timer = ({time}) => {
     const break50s = (time) => setTimer(time)
 
     return (
-            <div className="card pt-3 card-img">
-        <div className="d-flex gap-2 ms-4 align-items-center">
-            <img className="card-img-top rounded-5 w-25 " src="https://scontent.fdac145-1.fna.fbcdn.net/v/t39.30808-6/274233181_3085646058375783_6690705659848583132_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZO-M8LAQG3MAX9w4ryc&_nc_ht=scontent.fdac145-1.fna&oh=00_AT8yyWdRXFlxc1_MnpeUMDFepVQ92Ec_MjIRt3RXCxalzQ&oe=63398D2D" alt="..."/>
+            <div className="card pt-3 container ">
+        <div className="d-flex gap-3 align-items-center bg-dark p-3 text-white">
+            <img className="card-img w-25  " src="https://scontent.fdac145-1.fna.fbcdn.net/v/t39.30808-6/264210578_3031027093837680_3875358401366648132_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=tr-xBAj7GhwAX_1OGlq&_nc_ht=scontent.fdac145-1.fna&oh=00_AT_mi6qWGinUs76nRAVfNZ_2IZcnggmCzgc39JCMvXz3qg&oe=633B931D" alt="..."/>
             <div>
-                <p className='fw-bold'>Md. Asif Ullah Sikder</p>
+                <h5 className='fw-bold'>Md. Asif Ullah Sikder</h5>
                 <p><i className="fa-solid fa-map-location-dot pe-2"></i> Dhaka,Bangladesh</p>
             </div>
         </div>
