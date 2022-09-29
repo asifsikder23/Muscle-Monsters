@@ -30,12 +30,14 @@ const Workout = () => {
 
                         </div>
                     </div>
-                    <div className="col-12 col-md-4 mt-4 mt-md-0 sticky-top">
+                    <div className="col-12 col-md-4 mt-4 mt-md-0 sticky-md-top mx-auto">
                         <Timer time={time}></Timer>
                     </div>
 
 
-                    <h1 className='text-center p-5'>Questions</h1>
+                    
+                    <div className='bg-success mt-3 rounded mx-auto'>
+                    <h1 className='text-center p-3 text-white'>Questions</h1>
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header" id="headingOne">
@@ -76,6 +78,7 @@ const Workout = () => {
                             </div>
                         </div>
                         </div>
+                    </div>
                     
                 </div>
                 

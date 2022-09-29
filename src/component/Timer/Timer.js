@@ -1,8 +1,13 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../Timer/Timer.css'
 import Swal from 'sweetalert2'
 
 const Timer = ({time}) => {
+    const [timer, setTimer] = useState(0);
+    useEffect(()=>{
+        const newTime = localStorage.getItem('breakTime')
+        setTimer(newTime)
+    },[])
     const handleAlert= ()=>{
         Swal.fire(
             'Good job!',
@@ -10,12 +15,31 @@ const Timer = ({time}) => {
             'success'
           )
     }
-    const [timer, setTimer] = useState(0);
-    const break10s = (time) => setTimer(time)
-    const break20s = (time) => setTimer(time)
-    const break30s = (time) => setTimer(time)
-    const break40s = (time) => setTimer(time)
-    const break50s = (time) => setTimer(time)
+    const setLocalStorage = (time) =>{
+        return(
+            localStorage.setItem('breakTime',time)
+        )
+    }
+    const break10s = (time) => {
+        setLocalStorage(time)
+        setTimer(time)
+    }
+    const break20s = (time) => {
+        setLocalStorage(time)
+        setTimer(time)
+    }
+    const break30s = (time) => {
+        setLocalStorage(time)
+        setTimer(time)
+    }
+    const break40s = (time) => {
+        setLocalStorage(time)
+        setTimer(time)
+    }
+    const break50s = (time) => {
+        setLocalStorage(time)
+        setTimer(time)
+    }
 
     return (
             <div className="card pt-3 container ">
@@ -23,7 +47,7 @@ const Timer = ({time}) => {
             <img className="card-img w-25  " src="https://scontent.fdac145-1.fna.fbcdn.net/v/t39.30808-6/264210578_3031027093837680_3875358401366648132_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=tr-xBAj7GhwAX_1OGlq&_nc_ht=scontent.fdac145-1.fna&oh=00_AT_mi6qWGinUs76nRAVfNZ_2IZcnggmCzgc39JCMvXz3qg&oe=633B931D" alt="..."/>
             <div>
                 <h5 className='fw-bold'>Md. Asif Ullah Sikder</h5>
-                <p><i className="fa-solid fa-map-location-dot pe-2"></i> Dhaka,Bangladesh</p>
+                <p><i className="fa-solid fa-map-location-dot pe-2"></i> Dhaka, Bangladesh</p>
             </div>
         </div>
         <div className="d-flex justify-content-center gap-5 pt-4">
@@ -66,10 +90,10 @@ const Timer = ({time}) => {
           <h4>Exercise Details</h4>
           <div>
             <div className="d-flex gap-5 pt-3">
-                <h5>Exercise Time </h5> <span> {time} Sec </span>
+                <h5>Exercise Time </h5> <span> {time} Min </span>
             </div>
             <div className="d-flex gap-5 pt-3">
-                <h5>Break Time </h5> <span> {timer} </span>
+                <h5>Break Time </h5> <span> {timer}sec </span>
             </div>
             
           <div className="d-flex justify-content-center py-2">
