@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-    <header className="sticky-top bg-dark">
+    <header className="sticky-top bg-dark mb-3">
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <img src="fgh.png" alt="" />
@@ -23,7 +23,7 @@ const Header = () => {
                     <a className="nav-link text-white" href="index.html">Contact</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white" href="index.html">Blog</a>
+                    <a className="nav-link text-white" href="blog.html">Blog</a>
                   </li>
                 </ul>
               </div>
