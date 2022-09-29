@@ -35,7 +35,6 @@ const Workout = () => {
                     </div>
 
 
-
                     <h1 className='text-center p-5'>Questions</h1>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -67,7 +66,7 @@ const Workout = () => {
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                            How many uses of useEffect without API ?
                             </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
