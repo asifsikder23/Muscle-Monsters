@@ -1,0 +1,52 @@
+[
+    {
+        "key": "1",
+        "name": "Dumbble",
+        "time": "15",
+        "description": "Using dumbbells will work more muscles around the shoulders and chest than using a barbell because they're forced to keep the weights stable, and it's well worth developing those muscles before moving on to heavier barbells. Lie on a flat workout bench with your feet flat on the floor.",
+        "age": "20-25",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/young-strong-muscular-sweaty-man-biceps-muscle-royalty-free-image-1660829546.jpg"        
+    },
+    {
+        "key": "2",
+        "name": "Push-up",
+        "time": "12",
+        "description": "It's a Good Full Body Workout - By working on a large number of muscles in your body, push-ups help tremendously for a fitter you. Push-ups help you focus on your arms, abs and your lower body, all at the same time. They train your muscles to work together and become stronger.",
+        "age": "18-25",
+        "img": "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1790775113_631ff95c-37ba-415e-a3eb-042532b928ee_1000x.jpg?v=1620487797"        
+    },
+    {
+        "key": "3",
+        "name": "Chin-Up",
+        "time": "10",
+        "description": "The primary benefits of the chin-up are increasing strength and definition of the upper arms, specifically the biceps, the posterior deltoids of the shoulders and the teres major and latissimus dorsi muscles of the back.",
+        "age": "20-25",
+        "img": "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1706933392_1000x.jpg?v=1628675222"        
+    },
+    {
+        "key": "4",
+        "name": "Bench-Press",
+        "time": "10",
+        "description": "Bench presses can be used to increase strength, improve endurance, and tone the muscles of the upper body, including the chest, arms, and shoulders.",
+        "age": "20-25",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bench-press-spot-1571829590.jpg"        
+    },
+    {
+        "key": "5",
+        "name": "Bent-over-row",
+        "time": "12",
+        "description": "A bent-over row is a weight training exercise that targets a variety of back muscles. Which ones are targeted varies on form. The bent over row is often used for both bodybuilding and powerlifting.",
+        "age": "20-26",
+        "img": "https://generationiron.com/wp-content/uploads/2022/07/barbell-3-e1657412693300-696x379.jpeg"        
+    },
+    {
+        "key": "6",
+        "name": "Dumble",
+        "time": "10",
+        "description": "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, torso perpendicular to the floor, before being placed back on the ground. It is one of the three powerlifting exercises, along with the squat and bench press.",
+        "age": "25-30",
+        "img": "https://barbend.com/wp-content/uploads/2016/12/BarBend-Feature-Image-1200-x-675-2021-04-07T141449.522.jpg"        
+    }
+    
+   
+]
